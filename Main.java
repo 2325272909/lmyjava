@@ -6,13 +6,13 @@ public  class Main{
 		
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
-			String tip_system="æ¡£æ¡ˆç³»ç»Ÿ";
+			String tip_system="µµ°¸ÏµÍ³";
 			 
-			String tip_menu="è¯·é€‰æ‹©èœå•ï¼š";
+			String tip_menu="ÇëÑ¡Ôñ²Ëµ¥£º";
 			@SuppressWarnings("unused")
-			String tip_exit="ç³»ç»Ÿé€€å‡ºï¼Œè°¢è°¢ä½¿ç”¨ï¼";
-			String infos="****æ¬¢è¿è¿›å…¥"+tip_system+"*****\n\t   "+
-			             "1.ç™»å½•\n   \t    2.é€€å‡º\n"+
+			String tip_exit="ÏµÍ³ÍË³ö£¬Ğ»Ğ»Ê¹ÓÃ£¡";
+			String infos="****»¶Ó­½øÈë"+tip_system+"*****\n\t   "+
+			             "1.µÇÂ¼\n   \t    2.ÍË³ö\n"+
 					     "****************************";
 			int a;
 			 do
@@ -24,7 +24,7 @@ public  class Main{
 			 		a=cin.nextInt();
 					switch(a) {
 					case 1:
-						System.out.println("è¯·é€‰æ‹©èº«ä»½ï¼š");
+						System.out.println("ÇëÑ¡ÔñÉí·İ£º");
 						System.out.println("1.Administrator\n 2.Browser\n 3.Operator\n");
 						Scanner cin11=new Scanner(System.in);
 				 		int b=cin11.nextInt();
@@ -56,3 +56,4 @@ public  class Main{
 }
 
 			 
+			

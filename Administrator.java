@@ -16,12 +16,12 @@ public  class Administrator extends User{
 	@SuppressWarnings("resource")
 	public  boolean changeUserInfo(String password) {
 		 
-		// æ›´æ”¹å¯†ç 
-		System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
+		// ¸ü¸ÄÃÜÂë
+		System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
 		Scanner cin1=new Scanner(System.in);
  		 String name=cin1.toString();
  		 
- 		System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
+ 		System.out.println("ÇëÊäÈëÃÜÂë£º");
  		Scanner cin2=new Scanner(System.in);
  		 String password1=cin2.toString();
  		 
@@ -29,14 +29,14 @@ public  class Administrator extends User{
 		if (DataProcessing.update( name, password1,role))
 	   {
 				setPassword(password);
-				System.out.println("ä¿®æ”¹æˆåŠŸ");
+				System.out.println("ĞŞ¸Ä³É¹¦");
 				return true;
 		}else
 				return false;
 		
 	}
 	
-	 //åˆ é™¤
+	 //É¾³ı
 	public   boolean delUser(String name) {
 		Hashtable<String, User> users =new Hashtable<String,User>();
 		@SuppressWarnings("resource")
@@ -49,7 +49,7 @@ public  class Administrator extends User{
 			return false;
 	}
 	
-	//æ·»åŠ 
+	//Ìí¼Ó
 	public  boolean addUser(String name,String password,String role) {
 		Hashtable<String, User> users =new Hashtable<String,User>();
 		User user;
@@ -67,7 +67,7 @@ public  class Administrator extends User{
 			return true;
 		}
 	}
-	//åˆ—è¡¨
+	//ÁĞ±í
 	public  Enumeration<User> listUser() {
 		Hashtable<String, User> users =new Hashtable<String,User>();
 		Enumeration<User> e  = users.elements();
@@ -76,9 +76,9 @@ public  class Administrator extends User{
 	
 	public void showMenu( )
 	{
-		System.out.println("******æ¬¢è¿è¿›å…¥ç³»ç»Ÿç®¡ç†å‘˜å‘˜èœå•******");
-		System.out.println(" 1.ä¿®æ”¹ç”¨æˆ·\n  2.åˆ é™¤ç”¨æˆ·\n  3.æ–°å¢ç”¨æˆ·\n   4.åˆ—å‡ºç”¨æˆ·\n  5.ä¸‹è½½æ–‡ä»¶\n  6.æ–‡ä»¶åˆ—è¡¨\n  7.ä¿®æ”¹ï¼ˆæœ¬äººï¼‰å¯†ç  \n  8.é€€å‡º");
-		System.out.println("è¯·é€‰æ‹©èœå•ï¼š");
+		System.out.println("******»¶Ó­½øÈëÏµÍ³¹ÜÀíÔ±Ô±²Ëµ¥******");
+		System.out.println(" 1.ĞŞ¸ÄÓÃ»§\n  2.É¾³ıÓÃ»§\n  3.ĞÂÔöÓÃ»§\n   4.ÁĞ³öÓÃ»§\n  5.ÏÂÔØÎÄ¼ş\n  6.ÎÄ¼şÁĞ±í\n  7.ĞŞ¸Ä£¨±¾ÈË£©ÃÜÂë \n  8.ÍË³ö");
+		System.out.println("ÇëÑ¡Ôñ²Ëµ¥£º");
 		@SuppressWarnings("resource")
 		Scanner cin=new Scanner(System.in);
 		int a=cin.nextInt();
@@ -88,17 +88,17 @@ public  class Administrator extends User{
 			 //
 			break;
 		case 2:
-			System.out.println("è¯·è¾“å…¥åˆ é™¤ç”¨æˆ·åï¼š");
+			System.out.println("ÇëÊäÈëÉ¾³ıÓÃ»§Ãû£º");
 			Scanner cin4=new Scanner(System.in);
 	 		 String  name1= cin4.nextLine();
 			delUser( name1) ;
 			 break;
 		case 3:
-			System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
+			System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
 			Scanner cin1=new Scanner(System.in);
 			 String name=cin1. nextLine();
 			 
-			System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
+			System.out.println("ÇëÊäÈëÃÜÂë£º");
 			Scanner cin2=new Scanner(System.in);
 			 String password=cin2. nextLine();
 			 
@@ -110,7 +110,7 @@ public  class Administrator extends User{
 			break;
 		case 5:
 			 
-	 		 System.out.println("è¯·è¾“å…¥æ¡£æ¡ˆåï¼š");
+	 		 System.out.println("ÇëÊäÈëµµ°¸Ãû£º");
 	 		 Scanner cin8=new Scanner(System.in);
 	 		 String  filename=cin8. nextLine();
 			 try {
@@ -130,16 +130,16 @@ public  class Administrator extends User{
 			 break;
 		case 7:
 			 
-	 		 System.out.println("è¯·è¾“å…¥æ›´æ”¹åçš„å¯†ç ï¼š");
+	 		 System.out.println("ÇëÊäÈë¸ü¸ÄºóµÄÃÜÂë£º");
 	 		Scanner cin9=new Scanner(System.in);
 	 		 String  passwords=cin9. nextLine();
 			changeUserInfo(passwords);
 			break;
 		case 8:
-			System.out.println("é€€å‡ºç³»ç»Ÿï¼");
+			System.out.println("ÍË³öÏµÍ³£¡");
 			break;
 		default:
-			System.out.println("è¾“å…¥æŒ‡ä»¤é”™è¯¯");
+			System.out.println("ÊäÈëÖ¸Áî´íÎó");
 			break;
 				
 		}

@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.util.*;
 
 
-//æ¡£æ¡ˆæµè§ˆäººå‘˜
+//µµ°¸ä¯ÀÀÈËÔ±
 
 public  class Browser extends User {
 	 
@@ -17,15 +17,15 @@ public  class Browser extends User {
 	@SuppressWarnings("resource")
 	public void showMenu( ) {
 	
-		System.out.println("*****æ¬¢è¿è¿›å…¥æ¡£æ¡ˆæµè§ˆå‘˜èœå•******");
-		System.out.println("  1.ä¸‹è½½æ–‡ä»¶\n   2.æ–‡ä»¶åˆ—è¡¨\n   3.ä¿®æ”¹å¯†ç \n   4.é€€å‡º\n");
-		System.out.println("è¯·é€‰æ‹©èœå•ï¼š");
+		System.out.println("*****»¶Ó­½øÈëµµ°¸ä¯ÀÀÔ±²Ëµ¥******");
+		System.out.println("  1.ÏÂÔØÎÄ¼ş\n   2.ÎÄ¼şÁĞ±í\n   3.ĞŞ¸ÄÃÜÂë\n   4.ÍË³ö\n");
+		System.out.println("ÇëÑ¡Ôñ²Ëµ¥£º");
 		 
 		Scanner cin=new Scanner(System.in);
 		int a=cin.nextInt();
 		switch(a) {
 		case 1:
-			 System.out.println("è¯·è¾“å…¥æ¡£æ¡ˆåï¼š");
+			 System.out.println("ÇëÊäÈëµµ°¸Ãû£º");
 	 		 Scanner cin8=new Scanner(System.in);
 	 		 String  filename=cin8. nextLine();
 			 try {
